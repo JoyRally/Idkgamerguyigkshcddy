@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My App List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="title">My Cool Apps</h1>
+
+  <div class="card">
+    <img src="img1.jpg" alt="App 1">
+    <div class="info">
+      <h2>App One</h2>
+      <p><a href="#" class="download-link" data-app="app-one">Download</a></p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="img2.jpg" alt="App 2">
+    <div class="info">
+      <h2>App Two</h2>
+      <p><a href="#" class="download-link" data-app="app-two">Download</a></p>
+    </div>
+  </div>
+
+  <!-- The Popup Window -->
+  <div class="modal" id="downloadModal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modal-title">Download Options</h2>
+      <div class="download-options" id="download-options">
+        <!-- Buttons will appear here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
